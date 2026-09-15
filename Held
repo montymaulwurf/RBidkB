@@ -1,0 +1,35 @@
+public class Held extends Kreatur{
+    private String name;
+    private int staerke;
+    private Waffe waffe;
+
+    public Held(String pName, int pStaerke, int pLebenspunkte, Waffe pWaffe){
+        name = pName;
+        staerke = pStaerke;
+        lebenspunkte = pLebenspunkte;
+        waffe = pWaffe;
+
+    }
+    public Held(String pName, int pStaerke, int pLebenspunkte){
+        this.(pName, pStaerke, pLebenspunkte, null);
+    }
+
+    private angriffswertBerechnen(){
+        angriffswert = staerke + waffe.getBonus();
+    }
+
+    public getName(){
+        return name;
+    }
+
+    public getLebenspunkte(){
+        return lebenspunkte;
+    }
+
+    public setWaffe(Waffe pWaffe){
+        waffe = pWaffe;
+    }
+    public getWaffe(){
+        return waffe;
+    }
+}
