@@ -12,9 +12,9 @@ public class Waffe
     private double materialWert(String pMaterial) {
         int x = 5;
         if(pMaterial.equals("Holz")){
-            return x
+            return x;
         }
-        elif
+        else if
     }
     
     private void bonusBerechnen(String material, double magie){
