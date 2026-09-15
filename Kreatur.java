@@ -1,5 +1,5 @@
 public abstract class Kreatur
 {
-    protected double angriffswert;
+    protected int angriffswert;
     protected int lebenspunkte;
 }

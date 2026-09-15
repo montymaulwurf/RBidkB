@@ -1,17 +1,17 @@
 
 public class Waffe
 {   
-    private double bonus;
+    private int bonus;
     private String material;
-    private double magie;
+    private int magie;
     
-    public Waffe(String pMaterial, double pMagie){
+    public Waffe(String pMaterial, int pMagie){
         material = pMaterial;
         magie = pMagie;
         bonusBerechnen();
     }
     
-    private double materialWert(String pMaterial) {
+    private int materialWert(String pMaterial) {
         int x = 5;
 
         if("Stein".equals(pMaterial)){
@@ -32,7 +32,7 @@ public class Waffe
         bonus = materialWert(material) + magie;       
     }
 
-    public double getBonus(){
+    public int getBonus(){
         return bonus;
     }
 }

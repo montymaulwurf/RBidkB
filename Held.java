@@ -8,15 +8,20 @@ public class Held extends Kreatur{
         staerke = pStaerke;
         lebenspunkte = pLebenspunkte;
         waffe = pWaffe;
+        angriffswertBerechnen();
 
     }
     public Held(String pName, int pStaerke, int pLebenspunkte){
         this(pName, pStaerke, pLebenspunkte, null);
     }
 
+    public void angreifen(Monster monster, Kampfregel kampfregel){
+        
+    }
+
     private void angriffswertBerechnen(){
         angriffswert = staerke + waffe.getBonus();
-    }
+    } 
 
     public String getName(){
         return name;
@@ -24,6 +29,10 @@ public class Held extends Kreatur{
 
     public int getLebenspunkte(){
         return lebenspunkte;
+    }
+
+    public int getHeldAngriffswert() {
+        return angriffswert;
     }
 
     public void setWaffe(Waffe pWaffe){
