@@ -11,25 +11,25 @@ public class Held extends Kreatur{
 
     }
     public Held(String pName, int pStaerke, int pLebenspunkte){
-        this.(pName, pStaerke, pLebenspunkte, null);
+        this(pName, pStaerke, pLebenspunkte, null);
     }
 
-    private angriffswertBerechnen(){
+    private void angriffswertBerechnen(){
         angriffswert = staerke + waffe.getBonus();
     }
 
-    public getName(){
+    public String getName(){
         return name;
     }
 
-    public getLebenspunkte(){
+    public int getLebenspunkte(){
         return lebenspunkte;
     }
 
-    public setWaffe(Waffe pWaffe){
+    public void setWaffe(Waffe pWaffe){
         waffe = pWaffe;
     }
-    public getWaffe(){
+    public Waffe getWaffe(){
         return waffe;
     }
 }
