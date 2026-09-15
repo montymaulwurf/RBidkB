@@ -3,11 +3,11 @@ public class Kampfregel{
     private Wuerfel wuerfel6 = new Wuerfel();
     private Wuerfel wuerfel10 = new Wuerfel(10);
 
-    private boolean result; // result == bedeutet Held Sieg
+    private boolean result; // result == true bedeutet Held Sieg
     private double heldAngriff; 
     private double monsterAngriff;
 
-    public void kampf(Held held, Monster monster){
+    public Kampfregel(Held held, Monster monster){
         
         heldAngriff = 0;
         monsterAngriff = 0;
