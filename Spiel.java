@@ -1,16 +1,28 @@
+import java.util.Scanner;
+
 public class Spiel{
     public static void main(String[] args) {
 
+        Scanner heldErstellenEingabe = new Scanner(System.in);
+        System.out.println("Heldenname");  //  +Heldentyp ('Krieger' oder 'Zauberer')
+
+        String heldErsteller = heldErstellenEingabe.nextLine(); 
+        
+        
         Waffe eisenSchwert = new Waffe("Eisen", 2);
-        Held Gustave = new Held("Gustave", 10, 10, eisenSchwert);
-        Monster Francois = new Monster(20, 15);
+        Held held = new Held(heldErsteller, 10, 10, eisenSchwert);
+        Monster monster = new Monster(20, 15);
         Kampfregel NahKampf = new Kampfregel(6, 10);
 
-        Gustave.angreifen(Francois, NahKampf);
-        System.out.println(Gustave.getAngriffsErfolg());
-        System.out.println(NahKampf.getMonsterAngriff());
-        System.out.println(NahKampf.getHeldAngriff());
-
+        held.angreifen(monster, NahKampf);
+        
+        System.out.println("Monster : " + NahKampf.getMonsterAngriff());
+        System.out.println(held.getName() + " : " + NahKampf.getHeldAngriff());
+        if(held.getAngriffsErfolg() == true){
+            System.out.println(held.getName() + "Treffer");
+        } else{
+            System.out.println("Monster Treffer");
+        }
 
     }
 }
