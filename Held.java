@@ -10,7 +10,7 @@ public class Held extends Kreatur{
         staerke = pStaerke;
         lebenspunkte = pLebenspunkte;
         waffe = pWaffe;
-        //angriffswertBerechnen();  
+        angriffswertBerechnen();  
     }
 
     public Held(String pName, int pStaerke, int pLebenspunkte){
@@ -47,5 +47,8 @@ public class Held extends Kreatur{
     }
     public Waffe getWaffe(){
         return waffe;
+    }
+    public boolean getAngriffsErfolg(){
+        return angriffsErfolg;
     }
 }

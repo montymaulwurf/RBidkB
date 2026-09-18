@@ -19,14 +19,21 @@ public class Kampfregel{
         wuerfel1.werfen();
         wuerfel2.werfen();
 
-        heldAngriff = held.getHeldAngriffswert() * wuerfel1.gibAugenzahl() + wuerfel2.gibAugenzahl();
+        heldAngriff = held.getHeldAngriffswert() * (wuerfel1.gibAugenzahl() + wuerfel2.gibAugenzahl());
 
         wuerfel1.werfen();
         wuerfel2.werfen();
 
-        monsterAngriff = monster.getMonsterAngriffswert() * wuerfel1.gibAugenzahl() + wuerfel2.gibAugenzahl();
+        monsterAngriff = monster.getMonsterAngriffswert() * (wuerfel1.gibAugenzahl() + wuerfel2.gibAugenzahl());
 
         return heldAngriff > monsterAngriff; 
 
     } 
+
+    public double getHeldAngriff(){
+        return heldAngriff;
+    }
+    public double getMonsterAngriff(){
+        return monsterAngriff;
+    }
 }
