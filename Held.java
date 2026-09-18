@@ -3,12 +3,14 @@ public class Held extends Kreatur{
     protected  int staerke;
     protected  Waffe waffe;
 
+    protected boolean angriffsErfolg; // true == Held Sieg
+
     public Held(String pName, int pStaerke, int pLebenspunkte, Waffe pWaffe){
         name = pName;
         staerke = pStaerke;
         lebenspunkte = pLebenspunkte;
         waffe = pWaffe;
-        angriffswertBerechnen();  
+        //angriffswertBerechnen();  
     }
 
     public Held(String pName, int pStaerke, int pLebenspunkte){
@@ -16,7 +18,12 @@ public class Held extends Kreatur{
     }
 
     public void angreifen(Monster monster, Kampfregel kampfregel){
-        //kampfregel + angreifen match (idee?)
+        angriffsErfolg = kampfregel.kampf(this, monster);
+        if(angriffsErfolg == true){
+            monster.damage();
+        } else {
+            this.damage();
+        }
     }
 
     protected  void angriffswertBerechnen(){

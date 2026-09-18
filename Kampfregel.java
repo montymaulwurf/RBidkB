@@ -3,7 +3,6 @@ public class Kampfregel{
     private Wuerfel wuerfel1;
     private Wuerfel wuerfel2;
 
-    private boolean result; // result == true bedeutet Held Sieg
     private double heldAngriff; 
     private double monsterAngriff;
 
@@ -12,7 +11,7 @@ public class Kampfregel{
         wuerfel2 = new Wuerfel(pWuerfelAugenzahl2);
     }
 
-    public void kampf(Held held, Monster monster){ //this for held
+    public boolean kampf(Held held, Monster monster){ //this for held
         
         heldAngriff = 0;
         monsterAngriff = 0;
@@ -27,11 +26,7 @@ public class Kampfregel{
 
         monsterAngriff = monster.getMonsterAngriffswert() * wuerfel1.gibAugenzahl() + wuerfel2.gibAugenzahl();
 
-        result = heldAngriff > monsterAngriff; 
+        return heldAngriff > monsterAngriff; 
 
     } 
-
-    public boolean getResult(){
-        return result;
-    }
 }
