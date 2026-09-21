@@ -14,15 +14,24 @@ public class Spiel{
         Monster monster = new Monster(20, 15);
         Kampfregel NahKampf = new Kampfregel(6, 10);
 
-        held.angreifen(monster, NahKampf);
+        Krieger krieger = new Krieger("KriegerName", 10, 10, eisenSchwert,1.5);
+
+        while(held.getLebenspunkte() > 0 || monster.getMonsterLebenspunkte() > 0){
+            
+            held.angreifen(monster, NahKampf);
         
-        System.out.println("Monster : " + NahKampf.getMonsterAngriff());
-        System.out.println(held.getName() + " : " + NahKampf.getHeldAngriff());
-        if(held.getAngriffsErfolg() == true){
-            System.out.println(held.getName() + "Treffer");
-        } else{
-            System.out.println("Monster Treffer");
+            System.out.println("Monster : " + NahKampf.getMonsterAngriff());
+
+            System.out.println(held.getName() + " : " + NahKampf.getHeldAngriff());
+
+            if(held.getAngriffsErfolg() == true){
+                System.out.println(held.getName() + "Treffer");
+            } else{
+                System.out.println("Monster Treffer");
+            }
+            System.out.println();
         }
 
+        //System.out.println(krieger.getHeldAngriffswert());
     }
 }

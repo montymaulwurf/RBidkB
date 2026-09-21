@@ -1,6 +1,6 @@
 public abstract class Kreatur
 {
-    protected int angriffswert;
+    protected double angriffswert;
     protected int lebenspunkte;
 
     public void damage(){

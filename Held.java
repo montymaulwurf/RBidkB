@@ -26,7 +26,7 @@ public class Held extends Kreatur{
         }
     }
 
-    protected  void angriffswertBerechnen(){
+    protected void angriffswertBerechnen(){
         angriffswert = staerke + waffe.getBonus();
     } 
 
@@ -38,7 +38,7 @@ public class Held extends Kreatur{
         return lebenspunkte;
     }
 
-    public int getHeldAngriffswert() {
+    public double getHeldAngriffswert() {
         return angriffswert;
     }
 

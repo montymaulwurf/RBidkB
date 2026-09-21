@@ -2,7 +2,7 @@
 
 public class Monster extends Kreatur{
     
-    public Monster(int pAngriffswert, int pLebenspunkte){
+    public Monster(double pAngriffswert, int pLebenspunkte){
         angriffswert = pAngriffswert;
         lebenspunkte = pLebenspunkte;
         

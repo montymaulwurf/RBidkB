@@ -11,7 +11,7 @@ public class Kampfregel{
         wuerfel2 = new Wuerfel(pWuerfelAugenzahl2);
     }
 
-    public boolean kampf(Held held, Monster monster){ //this for held
+    public boolean kampf(Held held, Monster monster){ 
         
         heldAngriff = 0;
         monsterAngriff = 0;
