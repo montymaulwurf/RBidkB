@@ -10,4 +10,13 @@ public abstract class Kreatur
     public void damage(int x){
         lebenspunkte -= x;
     }
+    
+    public int getLebenspunkte(){
+        return lebenspunkte;
+    }
+    
+    public double getAngriffswert() {
+        return angriffswert;
+    }
+    
 }

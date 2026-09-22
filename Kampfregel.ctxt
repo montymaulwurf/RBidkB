@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Sep 22 08:54:42 CEST 2026
+comment0.target=Kampfregel
+comment1.params=pWuerfelAugenzahl1 pWuerfelAugenzahl2
+comment1.target=Kampfregel(int, int)
+comment2.params=held monster
+comment2.target=boolean kampf(Held, Monster)
+comment3.target=double getHeldAngriff()
+comment4.target=double getMonsterAngriff()
+numComments=5

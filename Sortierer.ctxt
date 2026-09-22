@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Sep 22 09:12:29 CEST 2026
+comment0.target=Sortierer
+comment1.params=data getComparableItem
+comment1.target=java.lang.Object[] sort(java.lang.Object[], java.util.function.Function)
+comment2.params=data x y
+comment2.target=void swap(java.lang.Object[], int, int)
+comment3.params=data l r getComparableItem
+comment3.target=java.lang.Object[] quickSort(java.lang.Object[], int, int, java.util.function.Function)
+numComments=4

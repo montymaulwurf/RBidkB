@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Sep 22 08:09:52 CEST 2026
+comment0.target=Waffe
+comment1.params=pMaterial pMagie
+comment1.target=Waffe(java.lang.String, int)
+comment2.params=pMaterial
+comment2.target=int materialWert(java.lang.String)
+comment3.target=void bonusBerechnen()
+comment4.target=int getBonus()
+numComments=5

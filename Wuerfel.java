@@ -21,7 +21,9 @@ public class Wuerfel
     {
         if(pSeitenzahl < 1)
         {
-            pSeitenzahl = 6;
+            throw new IllegalArgumentException(
+                "Wie sollte Würfel bitte weniger als 0 Seiten haben bruv"
+            );
         }
         seitenzahl = pSeitenzahl;
         werfen();
@@ -40,7 +42,7 @@ public class Wuerfel
      * Der Wuerfel wird einmal geworfen und seine 
      * Augenzahl damit geaendert
      */
-    public void werfen() {
+    public int werfen() {
         // ermittle eine Zufallszahl zwischen 1 und seitenzahl 
         // und setze diese in das Attribut augenzahl
         //
@@ -48,6 +50,7 @@ public class Wuerfel
         // erzeugt eine Zufallszahl
         // zwischen 0 und 1 (rationale Zahl)
         augenzahl =  (int) ((Math.random()*seitenzahl)+1);
+        return augenzahl;
     }
     
     public int gibAugenzahl()

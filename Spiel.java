@@ -16,7 +16,7 @@ public class Spiel{
 
         Krieger krieger = new Krieger("KriegerName", 10, 10, eisenSchwert,1.5);
 
-        while(held.getLebenspunkte() > 0 || monster.getMonsterLebenspunkte() > 0){
+        while(held.getLebenspunkte() > 0 || monster.getLebenspunkte() > 0){
             
             held.angreifen(monster, NahKampf);
         

@@ -1,0 +1,9 @@
+#BlueJ class context
+#Tue Sep 22 08:54:30 CEST 2026
+comment0.target=Kreatur
+comment1.target=void damage()
+comment2.params=x
+comment2.target=void damage(int)
+comment3.target=int getLebenspunkte()
+comment4.target=double getAngriffswert()
+numComments=5

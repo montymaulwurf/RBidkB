@@ -1,0 +1,14 @@
+#BlueJ class context
+#Tue Sep 22 09:40:33 CEST 2026
+comment0.target=Turnier
+comment1.params=pAnzahlRunden
+comment1.target=Turnier(int)
+comment2.target=void createBracket()
+comment3.target=Held getRandomHeld()
+comment4.target=Monster getRandomMonster()
+comment5.target=void sortiereHeldenStaerke()
+comment6.target=void sortiereHeldenLeben()
+comment7.target=void printHelden()
+comment8.params=x
+comment8.target=Held getHeldMitXHp(int)
+numComments=9

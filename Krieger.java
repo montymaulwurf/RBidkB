@@ -18,6 +18,6 @@ public class Krieger extends Held {
 
     protected void angriffswertBerechnen(){
         super.angriffswertBerechnen();
-        angriffswert = super.getHeldAngriffswert() * ausdauer;
+        angriffswert = super.getAngriffswert() * ausdauer;
     } 
 }

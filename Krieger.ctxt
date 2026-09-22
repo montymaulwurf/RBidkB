@@ -1,0 +1,9 @@
+#BlueJ class context
+#Tue Sep 22 08:54:53 CEST 2026
+comment0.target=Krieger
+comment1.params=pName pStaerke pLebenspunkte pWaffe pAusdauer
+comment1.target=Krieger(java.lang.String, int, int, Waffe, java.lang.Double)
+comment2.params=pName pStaerke pLebenspunkte pAusdauer
+comment2.target=Krieger(java.lang.String, int, int, java.lang.Double)
+comment3.target=void angriffswertBerechnen()
+numComments=4

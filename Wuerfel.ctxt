@@ -1,0 +1,14 @@
+#BlueJ class context
+#Tue Sep 22 08:21:13 CEST 2026
+comment0.target=Wuerfel
+comment0.text=\r\n Wuerfel \r\n \r\n @author GK EF (Abi 2028)\r\n @version 08.09.2026\r\n \r\n
+comment1.params=pSeitenzahl
+comment1.target=Wuerfel(int)
+comment1.text=\r\n Konstruktor fuer Objekte der Klasse TWuerfel\r\n @param die Seitenzahl des Wuerfels\r\n
+comment2.target=Wuerfel()
+comment2.text=\r\n Konstruktor fuer einen sechs-seitigen Wuerfel\r\n
+comment3.target=int werfen()
+comment3.text=\r\n Der Wuerfel wird einmal geworfen und seine \r\n Augenzahl damit geaendert\r\n
+comment4.target=int gibAugenzahl()
+comment5.target=int gibSeitenzahl()
+numComments=6

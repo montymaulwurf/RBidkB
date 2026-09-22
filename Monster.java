@@ -7,12 +7,4 @@ public class Monster extends Kreatur{
         lebenspunkte = pLebenspunkte;
         
     }
-    
-    public double getMonsterAngriffswert() {
-        return angriffswert;
-    }
-    
-    public int getMonsterLebenspunkte() {
-        return lebenspunkte;
-    }
 }

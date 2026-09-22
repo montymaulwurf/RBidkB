@@ -1,0 +1,6 @@
+#BlueJ class context
+#Tue Sep 22 08:54:30 CEST 2026
+comment0.target=Monster
+comment1.params=pAngriffswert pLebenspunkte
+comment1.target=Monster(double, int)
+numComments=2

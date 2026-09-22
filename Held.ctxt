@@ -1,0 +1,17 @@
+#BlueJ class context
+#Tue Sep 22 08:54:42 CEST 2026
+comment0.target=Held
+comment1.params=pName pStaerke pLebenspunkte pWaffe
+comment1.target=Held(java.lang.String, int, int, Waffe)
+comment2.params=pName pStaerke pLebenspunkte
+comment2.target=Held(java.lang.String, int, int)
+comment3.params=monster kampfregel
+comment3.target=void angreifen(Monster, Kampfregel)
+comment4.target=void angriffswertBerechnen()
+comment5.target=java.lang.String getName()
+comment6.target=int getHeldStaerke()
+comment7.params=pWaffe
+comment7.target=void setWaffe(Waffe)
+comment8.target=Waffe getWaffe()
+comment9.target=boolean getAngriffsErfolg()
+numComments=10
